@@ -41,8 +41,7 @@ for i in range(0, len(dnaString), 3):
     protein += codonTable[triplet]
 
 requested_file_without_format = requested_file.split(".")
-print(requested_file_without_format)
-output_file = requested_file_without_format[0] + "_output." + requested_file_without_format[1]
+output_file = requested_file_without_format[0] + "_protein-output." + requested_file_without_format[1]
 file = open(output_file, "w")
 file.write(protein)
 print("********************************************")
